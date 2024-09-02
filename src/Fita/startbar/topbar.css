@@ -1,0 +1,57 @@
+.nav-link {
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 5px;
+}
+
+
+.custom-button {
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+    border: 1px solid transparent;
+}
+
+
+.custom-button:hover {
+    background-color: #0056b3; 
+    border-color: #00408d; 
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+
+.custom-button:focus {
+    outline: none; 
+    box-shadow: 0 0 0 0.4rem rgba(0, 123, 255, 0.5);
+    border-color: #00408d; 
+}
+
+.custom-button:active {
+    background-color: #00408d; 
+    border-color: #003366; 
+} 
+
+.bar
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999; 
+    background-color:black; 
+}
+
+.slider {
+    padding-top: 90px; 
+}
+
+.carousel-image {
+    opacity: 0.6;
+    transition: opacity 0.5s ease;
+  }
+  
+.carousel-image:hover {
+    opacity: 1; 
+  }
+  
