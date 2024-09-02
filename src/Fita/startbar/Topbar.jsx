@@ -9,6 +9,9 @@ import fita8 from '../images/fita8.png';
 import { Link } from "react-router-dom";
 import { FaBookReader } from "react-icons/fa";
 
+import About from "../about/About";
+import Category from "../category/Category";
+
 export default function Topbar() 
 {
     return (
@@ -111,7 +114,8 @@ export default function Topbar()
                 </Carousel>
             </Container>
            
-
+            <About/>
+            <Category/>
         </>
     );
 }
