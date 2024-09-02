@@ -33,8 +33,9 @@ export default function About()
 
                     <div className="col-lg-6">
                         <h1>FITA Academy</h1>
-                        <p>FITA Academy, located in Pondicherry, is renowned as one oEADf the premier institutes offering training in a diverse range of programming languages, software technologies, and foreign languages. Our training programs are conducted by industry experts with extensive expertise and a minimum of 8 years of professional experience. At FITA Academy, we also provide comprehensive placement support to our students, enabling them to secure positions in top-tier companies. Enrol in FITA Academy today and turn your aspirations of working for esteemed organizations into reality.</p>
-                        <p className="btn btn-success py-3 px-5 mt-3">READ MORE</p>
+                        <p>FITA Academy, located in Pondicherry, is renowned as one oEADf the premier institutes offering training in a diverse range of programming languages, software technologies, and foreign languages. Our training programs are conducted by industry experts with extensive expertise and a minimum of 8 years of professional experience. </p>
+                        <p>At FITA Academy, we also provide comprehensive placement support to our students, enabling them to secure positions in top-tier companies. Enrol in FITA Academy today and turn your aspirations of working for esteemed organizations into reality.</p>
+                        <p className="btn btn-success py-3 px-5 mt-3">Submit Your CV</p>
                     </div> 
 
                 </div>
