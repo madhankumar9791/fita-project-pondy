@@ -16,6 +16,7 @@ h1 {
 }
 
 .form-group {
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
@@ -78,15 +79,3 @@ h1 {
     color: red;
     margin-left: 5px;
 }
-
-
-
-
-
-
-
-
-
-
-
- 
