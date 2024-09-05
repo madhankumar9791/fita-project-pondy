@@ -69,13 +69,16 @@
 @media (max-width: 767.98px) {
     .navbar-collapse {
         background-color: #343a40;
+        padding: 20px;
     }
     .nav-link {
         color: white;
+        padding-left:10px ;
     }
     .navbar-custom {
         height: 100px;
     }
+    
 }
 
 
