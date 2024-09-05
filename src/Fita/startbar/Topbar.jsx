@@ -5,8 +5,14 @@ import { FaBookReader } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import './topbar.css';
 import logo1 from '../images/logo1.png';
-
+ 
 export default function Topbar() {
+ 
+import About from "../about/About";
+import Category from "../category/Category";
+
+export default function Topbar() 
+ 
     return (
         <Navbar className="bg-dark navbar-custom" expand="md" fixed="top">
             <Container className="mb-4">
@@ -49,5 +55,11 @@ export default function Topbar() {
                 </Navbar.Collapse>
             </Container>
         </Navbar>
+
+           
+            <About/>
+            <Category/>
+        </>
+
     );
 }
