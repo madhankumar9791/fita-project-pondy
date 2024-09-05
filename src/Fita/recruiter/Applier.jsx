@@ -4,25 +4,31 @@ import { IoHome, IoInformationCircle, IoBriefcase, IoPeople, IoChatbubbles, IoMa
 import './applier.css';
 
 import logo from '../images/logo.png';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Applier()
 {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+const navi = useNavigate();
 
- 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!username || !password) {
-      alert('Please fill in both fields');
-      return;
-    }
-    console.log('Username:', username);
-    console.log('Password:', password);
-    setUsername('');
-    setPassword('');
-  };
+const handleSubmit = (e) => {
+  e.preventDefault();
+  
+  const defaultUsername = "user";
+  const defaultPassword = "user01";
+
+  if (username === defaultUsername && password === defaultPassword) {
+    navi('/admin');
+  } else {
+    alert("Invalid credentials");
+  }
+
+  console.log('Username:', username);
+  console.log('Password:', password);
+  setUsername('');
+  setPassword('');
+};
 
   return (
     <>
