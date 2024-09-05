@@ -1,57 +1,85 @@
+.logo {
+    border-radius: 10px;
+}
+
 .nav-link {
     transition: color 0.3s, background-color 0.3s;
+    color: white;
+    text-align: center;
+    margin-right: 20px;
 }
 
 .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.2); 
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
 }
-
 
 .custom-button {
     transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
     border: 1px solid transparent;
 }
 
-
 .custom-button:hover {
-    background-color: #0056b3; 
-    border-color: #00408d; 
+    background-color: #0056b3;
+    border-color: #00408d;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
 }
 
-
 .custom-button:focus {
-    outline: none; 
+    outline: none;
     box-shadow: 0 0 0 0.4rem rgba(0, 123, 255, 0.5);
-    border-color: #00408d; 
+    border-color: #00408d;
 }
 
 .custom-button:active {
-    background-color: #00408d; 
-    border-color: #003366; 
-} 
-
-.bar
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9999; 
-    background-color:black; 
+    background-color: #00408d;
+    border-color: #003366;
 }
 
-.slider {
-    padding-top: 90px; 
+.navbar-custom {
+    height: 80px;
+    padding: 0;
+    margin-top: 0;
 }
 
-.carousel-image {
-    opacity: 0.6;
-    transition: opacity 0.5s ease;
-  }
-  
-.carousel-image:hover {
-    opacity: 1; 
-  }
-  
+.navbar-custom .navbar-brand {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.navbar-custom .navbar-collapse {
+    margin-bottom: 25px;
+}
+
+.navbar-custom .nav-link {
+    display: flex;
+    align-items: center;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="%23ffffff" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+.navbar-toggler {
+    border-color: transparent;
+}
+
+@media (max-width: 767.98px) {
+    .navbar-collapse {
+        background-color: #343a40;
+    }
+    .nav-link {
+        color: white;
+    }
+    .navbar-custom {
+        height: 100px;
+    }
+}
+
+
+
+
+
+

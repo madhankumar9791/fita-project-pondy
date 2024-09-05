@@ -1,10 +1,7 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Button,Nav } from "react-bootstrap";
-import { IoHome, IoInformationCircle, IoBriefcase, IoPeople, IoChatbubbles, IoMail } from 'react-icons/io5';
+import { Container, Row, Col, Button} from "react-bootstrap";
 import './register.css'; 
-
-import logo from '../images/logo.png';
-import { Link } from "react-router-dom";
+import Topbar from "../startbar/Topbar";
 
 export default function Register() {
     const [formData, setFormData] = useState({
@@ -36,53 +33,12 @@ export default function Register() {
 
     return (
     <>
-        <Container fluid className=" bg-dark">
-        <Row className="bar align-items-center p-2">
-            <Col xs={3}>
-            <Link to={'/'}>
-                <img src={logo} width={65} height={65} alt="Logo" style={{ borderRadius: '50%',marginLeft:"10px" }} />
-            </Link>
-            </Col>
-
-            <Col xs={6} className="text-white p-2 text-center">
-                <Nav>
-                    <Nav.Item >
-                        <Nav.Link style={{marginLeft:"10px"}} className="text-white"> <IoHome style={{ marginRight: "5px" }} /> Home</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link style={{marginLeft:"10px"}} className="text-white"><IoInformationCircle style={{ marginRight: "5px" }} /> About</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link style={{marginLeft:"10px"}} className="text-white"><IoBriefcase style={{ marginRight: "5px" }} />Jobs</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link style={{marginLeft:"10px"}} className="text-white"> <IoPeople style={{ marginRight: "5px" }} />Recruiter</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link style={{marginLeft:"10px"}} className="text-white"> <IoChatbubbles style={{ marginRight: "5px" }} />Testimonial</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link style={{marginLeft:"10px"}} className="text-white"> <IoMail style={{ marginRight: "5px" }} />Contact</Nav.Link>
-                    </Nav.Item>
-                </Nav>
-            </Col>
-
-            <Col xs={3} className="text-center">
-            <Link to={'/register'}>
-                <Button variant="success" className="custom-button p-2 m-3 ">Register</Button>
-            </Link>  
-            <Link to={'/applier'}>
-                <Button variant="warning" className="custom-button p-2 m-3 ">Apply Jobs</Button>
-            </Link>
-            </Col>
-        </Row>
-
-        </Container>
+        <Topbar />
 
         <Container style={{marginTop:"120px"}}>
             <Row className="justify-content-center">
-                <Col md={8}>
-                    <h1 className="m-2 ">Fita Students Form</h1>
+                <Col md={8} className="form-container">
+                    <h1 className="m-2 "> Submit Your Cv </h1>
                     <form onSubmit={handleSubmit}>
                         <Row>
                             <Col md={6}>
@@ -262,3 +218,8 @@ export default function Register() {
         </>
     );
 }
+
+
+
+
+
