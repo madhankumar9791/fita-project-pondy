@@ -2,8 +2,10 @@ import React from "react";
 import { BrowserRouter, Routes,Route } from "react-router-dom";
 
 import Topbar from './startbar/Topbar';
+import Slides from "./Slider/Slides";
 import Register from './student/Register';
 import Applier from './recruiter/Applier';
+
 
 export default function Main()
 {
@@ -15,6 +17,7 @@ export default function Main()
         <Routes>
        
             <Route path="/" element={<Topbar /> } />
+            <Route path="/slides" element={<Slides />} />
             <Route path="/register" element={<Register />} />
             <Route path="/applier" element={<Applier />} />
             
