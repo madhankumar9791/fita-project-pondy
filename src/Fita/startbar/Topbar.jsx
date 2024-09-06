@@ -6,23 +6,22 @@ import './topbar.css';
 import logo from '../images/logo.png';
 import fita1 from '../images/fita1.png';
 import fita8 from '../images/fita8.png';
-import { Link } from "react-router-dom";
-
+ 
 import { FaBookReader } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import './topbar.css';
-import logo1 from '../images/logo1.png';
+ import logo1 from '../images/logo1.png';
  
-export default function Topbar() {
- 
+  
 import About from "../about/About";
 import Category from "../category/Category";
 import Menu from "../placement/Menu";
 import Clients from '../testmonial/Clients'
 import Footer from "../footer/Footer";
 export default function Topbar() 
+{
  
     return (
+        <div>
         <Navbar className="bg-dark navbar-custom" expand="md" fixed="top">
             <Container className="mb-4">
                 <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
@@ -71,7 +70,8 @@ export default function Topbar()
             <Menu/>
             <Clients/>
             <Footer/>
-        </>
-
+            </div>
+       
     );
 }
+
